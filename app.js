@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 8000;
+const port = 5000;
 
 // http method 중 ged으로 host:port를 보내면 실행되는 라우트
 app.get('/', (req, res) => {
