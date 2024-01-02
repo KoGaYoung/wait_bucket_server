@@ -21,8 +21,8 @@ jobs:
       - name: Deploy to Server
         env:
           DEPLOY_SSH_KEY: ${{ secrets.SSH_PEM }}
-          SERVER_IP: ${{ secrets.BUILD_SSH_IP }}
-          SERVER_USER: ${{ secrets.BUILD_SSH_USER }}
+          BUILD_SSH_IP: ${{ secrets.BUILD_SSH_IP }}
+          BUILD_SSH_USER: ${{ secrets.BUILD_SSH_USER }}
         run: |
           # SSH 키 설정을 수행합니다.
           mkdir -p ~/.ssh
