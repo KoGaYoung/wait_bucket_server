@@ -31,4 +31,4 @@ jobs:
 
           # 빌드 서버에 SSH로 접근하여 배포 스크립트를 실행합니다.
           # 여기서는 사용자 정의 스크립트 './start_backend.sh'를 실행합니다.
-          # ssh -i ~/.ssh/id_rsa $BUILD_SSH_USER@$BUILD_SSH_IP "./start_backend.sh"
+          ssh -v -i ~/.ssh/id_rsa $BUILD_SSH_USER@$BUILD_SSH_IP "./start_backend.sh"
