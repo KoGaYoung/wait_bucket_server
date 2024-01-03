@@ -11,6 +11,11 @@ app.get('/login', (req, res) => {
     res.send('hello, login');
 }); 
 
+app.get('/gitaction', (req, res) => {
+    res.send('hello, gitaction');
+}); 
+
+
 app.listen(port, () => {
     console.log(`${port} 포트가 실행됩니다.`);
 })
